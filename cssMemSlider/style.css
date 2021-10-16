@@ -3,11 +3,9 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 html, body {
   height: 100%;
 }
-
 body {
   color: rgb(0, 0, 0);
   font-family: 'Gloria Hallelujah', cursive;
@@ -33,7 +31,6 @@ body {
   justify-content: flex-end;
  
 }
-
 .slider-btn {
   width: 1em;
   height: 1em;
@@ -89,8 +86,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-
 .text-container {
   position: absolute;
   left: 0;
@@ -144,7 +139,6 @@ body {
     width: 90vw;
     height: 95%;
   }
- 
 }
 @media (max-width: 420px) {
   .slider {
