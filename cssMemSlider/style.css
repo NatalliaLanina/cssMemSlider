@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 16px;
   margin: 0;
@@ -35,8 +35,8 @@ body {
 }
 
 .slider-btn {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   border-radius: 50%;
   margin: 1em;
   margin-right: 3em;
@@ -93,27 +93,38 @@ body {
 
 .text-container {
   position: absolute;
-  bottom: 0;
   left: 0;
-  width: 33%;
+  width: 29%;
   overflow: hidden;
   height: 3.5em;
 }
 .slider-text {
-  width: 500%;
-  transition: all 1s ease-out;
+  width: 410%;
+  transition: all .5s linear;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
+  transform: translateX(0%);
 }
 .text {
   font-size: 2em;
   color: black;
-  padding-right: 1em;
   margin-block-start: 0;
   margin-block-end: 0;
 }
-
+.slider-btn:checked:nth-of-type(1) ~ .text-container .slider-text {
+  transform: translateX(0%);
+}
+.slider-btn:checked:nth-of-type(2) ~ .text-container  .slider-text {
+  transform: translateX(-25%);
+}
+.slider-btn:checked:nth-of-type(3) ~ .text-container  .slider-text {
+  transform: translateX(-50%);
+}
+.slider-btn:checked:nth-of-type(4) ~ .text-container  .slider-text {
+  transform: translateX(-75%);
+}
 
 @keyframes check {
   50% {
